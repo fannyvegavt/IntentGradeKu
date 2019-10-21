@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HASIL"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/lt_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Nim                :"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/lt_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/lt_nim"
+            android:text="Nama             :"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraint" />
+
+        <TextView
+            android:id="@+id/lt_nilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/lt_nama"
+            android:text="Nilai Angka   :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lt_ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lt_nilai"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Keterangan   :"
+            android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/lt_has_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="59dp"
+        android:text="Nim      :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/lt_nim"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lt_has_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="35dp"
+        android:text="Nama      :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/lt_nama"
+        app:layout_constraintTop_toBottomOf="@+id/lt_has_nim" />
+
+    <TextView
+        android:id="@+id/lt_has_nilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="39dp"
+        android:text="Nilai      :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/lt_nilai"
+        app:layout_constraintTop_toBottomOf="@+id/lt_has_nama" />
+
+    <TextView
+        android:id="@+id/lt_has_ket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Nama      :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/lt_ket"
+        app:layout_constraintTop_toBottomOf="@+id/lt_has_nilai" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INPUT DATA MAHASISWA"
+            android:textColor="#FF0000"
+            android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/inputkan_nim"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="33dp"
+                android:ems="15"
+                android:inputType="textPersonName"
+                tools:ignore="MissingConstraint"
+                android:hint="Nim"/>
+
+            <EditText
+                android:id="@+id/inputkan_nama"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="33dp"
+                android:ems="15"
+                android:inputType="textPersonName"
+                tools:ignore="MissingConstraint"
+                android:hint="Nama"/>
+
+            <EditText
+                android:id="@+id/inputkan_nilai"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="33dp"
+                android:ems="15"
+                android:inputType="textPersonName"
+                tools:ignore="MissingConstraint"
+                android:hint="Nilai"/>
+
+            <Button
+                android:id="@+id/btn_cek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp"
+                tools:ignore="MissingConstraint"
+                android:text="Proses"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
